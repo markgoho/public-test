@@ -27,6 +27,11 @@ jobs:
         with:
           repository: markgoho/private-test
           token: ${{ secrets.GH_PAT }}
+          
+      - run: |
+          git config --global user.email "markgoho@gmail.com"
+          git config --global user.name "Mark Goho"
+ 
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
